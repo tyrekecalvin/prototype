@@ -1,0 +1,173 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 200%;
+    padding-top: 50px;
+    /*margin-bottom: -50px;*/
+}
+
+.navbar li {
+    float: left;
+    margin-right:50px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+.stuff{
+    position: relative;
+    top: 30px;
+    right: 0px;
+    width: 50%;
+}
+.cat{
+   height:300px;
+    width:400px;
+    float:right;
+    position:relative;
+    bottom: 120px;
+    left: -180;
+}
+
+.car{
+    width:100%;
+    height:300px;
+}
+.ph{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.the{
+  position: relative;
+    top: 30px;
+    right: 0px;
+    width: 60%;
+}
+.ph li {
+    float: left;
+    margin-right:50px;
+    position: relative;
+    top: 80px;
+}
+.ph{
+   width:300px; 
+   height:300px;
+}
+.service{
+    height:290px;
+    width:200px
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
+.tree{
+    list-style-type:none;
+    margin:0;
+    padding:25px;
+    text-align:center;
+    color:white;
+    background-color:grey;
+}
+#section1 {
+    height: 100vh;
+}
+#section2 {
+    height: 220vh;
+}
+#section3 {
+    height: 150vh;
+}
+#section4 {
+    height: 250vh;
+}
+#section5 {
+    height: 100vh;
+}
+.what{
+    height:300px;
+    width:200px;
+    float:left;
+    position:relative;
+    bottom: 350px;
+    right: -500px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.new{
+    height:301px;
+    width:400px;
+    float:left;
+    position:relative;
+    bottom: 420px;
+    right: -900px;
+}
+.something{
+position:relative;
+height:200px;
+width:500px;
+left:50px;
+top:100px;
+}
+.paper{
+    position:relative;
+    left:1000px;
+    height:200px;
+    width:200px;
+}
