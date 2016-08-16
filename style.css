@@ -128,7 +128,7 @@ left:140px;
     padding:25px;
     text-align:center;
     color:white;
-    background-color:gray;
+    background-color:#1D093A;
     width:96.5%;
 }
 #section1 {
@@ -260,9 +260,7 @@ h2 {
        
    }
   
-    .navbar {
-    display: none;
-  }
+    
    .nav-toggle {
     display: block;
   }
@@ -273,6 +271,10 @@ h2 {
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 2% 2.4%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+
+    .mobile-nav-hidden{
+        display:none;
+    }
 }
 /*  GRID OF TWO  */
 .span_2_of_2 {
@@ -315,20 +317,26 @@ h2 {
 }
 
 .csty{
- color:white;   
+ color:black;   
 }
 
 .lago{
-    background-color:#333;
+    background-color:white;
     margin-left:20px;
     margin-top:3px;
 }
-
-.yip{
+p{
     color:white;
 }
+html{
+    background-color:#DDBB54;
+}
+
+.yip{
+    color:black;
+}
 .stile{
-    background-color:#333;
+    background-color:white;
 }
 ul, menu, dir {
     display: block;
@@ -342,6 +350,7 @@ ul, menu, dir {
 .wow{
     font-weight:bold;
     text-align:center;
+    color: black;
     font-size:30px;
 }
 .ugly{

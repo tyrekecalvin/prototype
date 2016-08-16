@@ -2,14 +2,16 @@
 <html>
 
 <head>
+    <!--Move Font Awesome script next to services just to organize, no big deal -->
     <title>Prototype</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="services.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+
+
     <script src="https://use.fontawesome.com/e789c85f28.js"></script>
     <meta charset="utf-8">
 </head>
- 
+
 <body>
     <nav id="js-scrollspy">
         <button class="nav-toggle lago" id="nav-toggle"><i class="fa fa-ellipsis-v csty" aria-hidden="true"></i></button>
@@ -33,7 +35,24 @@
         <img class="myslides" src="images/landscape4.jpg"></img>
         <img class="myslides" src="images/images.jpg"></img>
     </div>
-    
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+    </script>
 
     <div id="section1" class="container-fluid my-content">
         <!--  <img class="car" src="images/blackplaceholder.jpg"></img>
@@ -58,12 +77,7 @@
         <div class="grid">
             <div class="col-6-8">
                 <h1 class="great">Our Company:</h1>
-                <p class="something">
-What’s an Ugly Duck?
-
-Well our name is from the classic childhood story, The Ugly Duckling
-
-The story tells of a homely (ugly) little bird born and is teased and bothered, until he grows into a beautiful swan. He Ugly Duckling story represents transformation. That’s what Ugly Duck is about. We bring out the beauty!
+                <p class="something"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati, consequatur, praesentium aliquid ipsa magnam facere ipsum sint ratione quidem quas molestias eum. Quas, laboriosam, commodi ex eligendi non consequatur?
                 </p>
                 </div>
             </div>
@@ -98,47 +112,52 @@ The story tells of a homely (ugly) little bird born and is teased and bothered, 
                         <div class="row">
                         <div class="col span_1_of_3">
                             <img class="service" src="images/blackplaceholder.jpg"></img>
-                            <h2>Lawn Maintenance
+                            <h2>Title
                             <button class="lago" id="see-more"><i class="fa fa-caret-down csty" aria-hidden="true"></i></button></h2>
-                            <p class="nav" id="text">Lawn Maintenance: 
-                            starting price:
+                            <p class="nav" id="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                             </p>
                         </div>
                         <div class="col span_1_of_3">
                             <img class="service" src="images/blackplaceholder.jpg"></img>
-                            <h2>snow removal
+                            <h2>Title
                             <button class="lago" id="load"><i class="fa fa-caret-down csty" aria-hidden="true"></i></button></h2>
-                            <p class="nav" id="para">snow removal: starting price:
+                            <p class="nav" id="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                             </p>
                         </div>
                         <div class="col span_1_of_3">
                             <img class="service" src="images/blackplaceholder.jpg"></img>
-                            <h2>convey maintenance
+                            <h2>Title
                             <button class="lago" id="see"><i class="fa fa-caret-down csty" aria-hidden="true"></i></button></h2>
-                            <p class="nav" id="more"> convey maintenance: starting price:
+                            <p class="nav" id="more">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span_1_of_3">
                             <img class="service" src="images/blackplaceholder.jpg"></img>
-                            <h2> winterization
+                            <h2>Title
                             <button class="lago" id="button"><i class="fa fa-caret-down csty " aria-hidden="true"></i></button></h2>
-                            <p class="nav" id="word">  winterization: starting price:
+                            <p class="nav" id="word">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                             </p>
                         </div>
                         <div class="col span_1_of_3">
                             <img class="service" src="images/blackplaceholder.jpg"></img>
-                            <h2>securing
+                            <h2>Title
                             <button class="lago" id="abrir"><i class="fa fa-caret-down csty" aria-hidden="true"></i></button></h2>
-                            <p class="nav" id="stop">securing: starting price:
+                            <p class="nav" id="stop">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                             </p>
                         </div>
                         <div class="col span_1_of_3">
                             <img class="service" src="images/blackplaceholder.jpg"></img>
-                            <h2>debris removal
+                            <h2>Title
                             <button class="lago" id="open"><i class="fa fa-caret-down csty" aria-hidden="true"></i></button></h2>
-                            <p class="nav" id="close"> debris removal: starting price:
+                            <p class="nav" id="close">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                             </p>
                         </div>
                     </div>
@@ -250,15 +269,19 @@ The story tells of a homely (ugly) little bird born and is teased and bothered, 
                         </div>
                         
                         <footer>
-                            <div id="section6" class="container-fluid">
+                            <div id="section6" class="container-fluid"></div>
                             <h1>Contact Us</h1>
+                            
+                            
+                            <h1>Book your appointment here:</h1>
+                            <p> Email: <a href="mailto:helloworl@coderspace.org s ?subject=greetings" target="blank">someone1234@gmail.com</a></p>
+                            <p>Phone Number:847-863-1223</p>
                             </footer>
-                            <p class="wow"> Prior to your appointment please fill out this info form:</p>  <h1 class="wow">Book your appointment here:</h1><script type="text/javascript" src="https://form.jotform.com/jsform/62284576415158"></script>
-                            <!-- need to change the email that recieves the form once we get an email address-->
-                            <p class="ugly"> Email: <a href="mailto:helloworl@coderspace.org s ?subject=greetings" target="blank">someone1234@gmail.com</a></p>
-                            <p class="ugly">Phone Number: 847-863-1223</p></div>
+                            <p> Prior to your appointment please fill out this info form:<script type="text/javascript" src="https://form.jotform.com/jsform/62284576415158"></script></p> 
                            
-                          <script type="text/javascript" src="script/carousel.js"></script>
+                          
+                          <script type="text/javascript" src="script/services.js"></script>
+                          <script type="text/javascript" src="script/nav.js"></script>
   
 </body>
 
