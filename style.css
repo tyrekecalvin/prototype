@@ -15,7 +15,8 @@ body{
 }
 
 .navbar li {
-    float: left;
+    float:left;
+    display:inline-block;
     margin-right:50px;
 }
 
@@ -186,15 +187,10 @@ left:140px;
     height:200px;
     width:200px;
 }
-.wonderful{
-    position:relative;
-    left:50px;
-}
- 
+
   
-.nav {
-    display:none;
-}
+
+
 .col-6-8{
     width:65%;
 }
@@ -251,12 +247,15 @@ h2 {
 .nav-toggle{
     display:none;
 }
+
 @media (max-width: 915px) {
-   .nav-item{
-       display:inline;
-       
-   }
-  
+   .navbar li{
+       display:block;
+       float:none;
+        }
+  .navbar{
+      overflow:visible;
+  }
     
    .nav-toggle {
     display: block;
@@ -296,9 +295,7 @@ h2 {
 .after:after{
     
 }
-.nav-item{
-    display:none;
-}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
@@ -348,4 +345,23 @@ ul, menu, dir {
 .ugly{
     font-size:30px;
     text-align:center;
+}
+.wonder{
+    width:100px;
+    text-align:center;
+    height:100px;
+    position:relative;
+    left:160px;
+    display:inline;
+    top:30px;
+    font-size:30px;
+}
+.wonderful{
+    list-style-type:none;
+    margin:0;
+    height:100px;
+    text-align:center;
+    color:white;
+    background-color:#1D093A;
+    font-size:30px;
 }
